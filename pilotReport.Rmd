@@ -26,17 +26,15 @@ completionDate <- NA # copilot insert the date of final report completion (after
 
 #### Methods summary: 
 
-[PILOT/COPILOT write a brief summary of the methods underlying the target outcomes written in your own words]
+The authors gathered photographs of recently incarcerated inmates from the State of Florida database to investigate whether ratings of facial trustworthiness (as rated by 208 American MTurk participants) differs according to actual severity of sentencing (serving life sentence vs. awaiting execution) and race. They subjected the mean trustworthiness ratings for each of the 742 photographs to a 2 (race: Black vs. White) x 2 (sentence: life sentence vs. death sentence) analysis of variance (ANOVA).
 
 ------
 
 #### Target outcomes: 
 
-[PILOT copy and paste the target outcomes identified in targetOutcomes.md]  
+"Because we were interested in generalizing about the characteristics of the targets (e.g., how perceptions of their trustworthiness relate to their sentences), we analyzed the data with the target as the unit of analysis. We therefore averaged the participants’ ratings to compute mean consensus judgments for each face on each trait. Degrees of freedom thus reflect the number of faces, rather than the number of participants contributing to judgments of those faces. Mean analyses. To investigate whether trustworthiness differed according to sentence and target race, we first subjected the mean trustworthiness data for each of the 742 targets to a 2 (race: Black vs. White) × 2 (sentence: life vs. death) between-targets analysis of variance (ANOVA). We observed a main effect of sentence, F(1, 738) = 7.44, p < .01, ηp2 = .01; targets sentenced to death looked less trustworthy (M = 2.76, SE = 0.03) than targets sentenced to life imprisonment (M = 2.87, SE = 0.03), 95% confidence interval (CI) for the difference = [0.03, 0.20]. We also observed an unpredicted main effect of race, F(1, 738) = 47.67, p < .001, ηp2 = .06; Black targets were rated as more trustworthy (M = 2.96, SE = 0.03) than White targets (M = 2.67, SE = 0.03), 95% CI for the difference = [0.21, 0.37] (see the Supplemental Material available online for further discussion). Notably, race and sentence did not interact, F(1, 738) = 0.02, p > .88, ηp2 < .001, which suggests that the relationship between trustworthiness and sentence was not moderated by target race. For this reason, we did not compute an interaction term involving race for the subsequent regression analyses."
 
 ------
-
-[PILOT/COPILOT DO NOT CHANGE THE CODE IN THE CHUNK BELOW]  
 
 ```{r global_options, include=FALSE}
 # sets up some formatting options for the R Markdown document
@@ -44,8 +42,6 @@ knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
 ```
 
 # Step 1: Load packages and prepare report object
-
-[PILOT/COPILOT Some useful packages are being loaded below. You can add any additional ones you might need too.]
 
 ```{r}
 # load packages
@@ -56,8 +52,6 @@ library(readxl) # import excel files
 library(CARPSreports) # custom report functions
 ```
 
-[PILOT/COPILOT DO NOT MAKE CHANGES TO THE CODE CHUNK BELOW]
-
 ```{r}
 # Prepare report object. This will be updated automatically by the reproCheck function each time values are compared
 reportObject <- data.frame(dummyRow = TRUE, reportedValue = NA, obtainedValue = NA, valueType = NA, percentageError = NA, comparisonOutcome = NA, eyeballCheck = NA)
@@ -66,21 +60,16 @@ reportObject <- data.frame(dummyRow = TRUE, reportedValue = NA, obtainedValue = 
 # Step 2: Load data
 
 ```{r}
+Data <- read_excel("data/Study1 Data Unrounded.xlsx")
 ```
 
 # Step 3: Tidy data
 
 ```{r}
+#Already tidy data
 ```
 
 # Step 4: Run analysis
-
-## Pre-processing
-
-[you can remove this section if no pre-processing is required]
-
-```{r}
-```
 
 ## Descriptive statistics
 
