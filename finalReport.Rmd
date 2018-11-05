@@ -291,18 +291,6 @@ if(reportType == "final"){
 }
 ```
 
-The following code chunk does not run because the function carpsReport() is not found.
-```{r}
-# carpsReport(Report_Type = 'pilot',
-#           Article_ID = 'EXT_10-07-2015',
-#           Insufficient_Information_Errors = 0,
-#           Decision_Errors = 0,
-#           Major_Numerical_Errors = 0,
-#           Time_to_Complete = 240,
-#           Author_Assistance = FALSE)
-```
-
-
 # Session information
 
 ```{r session_info, include=TRUE, echo=TRUE, results='markup'}
