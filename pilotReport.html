@@ -226,14 +226,14 @@ div.tocify {
 <div id="report-details" class="section level1">
 <h1>Report Details</h1>
 <pre class="r"><code>articleID &lt;- &quot;EXT_10-07-2015&quot; # insert the article ID code here e.g., &quot;10-3-2015_PS&quot;
-reportType &lt;- &quot;pilot&quot; # specify whether this is the 'pilot' report or 'final' report
+reportType &lt;- &quot;final&quot; # specify whether this is the 'pilot' report or 'final' report
 pilotNames &lt;- &quot;Julie Cachia&quot; # insert the pilot's name here e.g., &quot;Tom Hardwicke&quot;.  If there are multiple pilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
 copilotNames &lt;- &quot;Greses Anabell Perez-Joehnk&quot; # # insert the co-pilot's name here e.g., &quot;Michael Frank&quot;. If there are multiple co-pilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
 pilotTTC &lt;- &quot;240&quot; # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
-copilotTTC &lt;- NA # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+copilotTTC &lt;- &quot;480&quot; # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
 pilotStartDate &lt;- as.Date(&quot;11/03/18&quot;, format = &quot;%m/%d/%y&quot;) # insert the pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
-copilotStartDate &lt;- NA # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
-completionDate &lt;- NA # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
+copilotStartDate &lt;- as.Date(&quot;11/04/18&quot;, format = &quot;%m/%d/%y&quot;) # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
+completionDate &lt;- as.Date(&quot;11/04/18&quot;, format = &quot;%m/%d/%y&quot;) # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
 <hr />
 <div id="methods-summary" class="section level4">
 <h4>Methods summary:</h4>
@@ -449,11 +449,11 @@ if(reportType == &quot;final&quot;){
 }</code></pre>
 <p>The following code chunk does not run because the function carpsReport() is not found.</p>
 <pre class="r"><code># carpsReport(Report_Type = 'pilot',
-#           Article_ID = 'EXT_10-07-2015', 
+#           Article_ID = 'EXT_10-07-2015',
 #           Insufficient_Information_Errors = 0,
 #           Decision_Errors = 0,
 #           Major_Numerical_Errors = 0,
-#           Time_to_Complete = 240, 
+#           Time_to_Complete = 240,
 #           Author_Assistance = FALSE)</code></pre>
 </div>
 <div id="session-information" class="section level1">
@@ -469,7 +469,7 @@ if(reportType == &quot;final&quot;){
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       America/Los_Angeles         
-##  date     2018-11-03                  
+##  date     2018-11-04                  
 ## 
 ## ─ Packages ──────────────────────────────────────────────────────────────
 ##  package      * version date       lib

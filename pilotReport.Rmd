@@ -10,14 +10,14 @@ output:
 
 ```{r}
 articleID <- "EXT_10-07-2015" # insert the article ID code here e.g., "10-3-2015_PS"
-reportType <- "pilot" # specify whether this is the 'pilot' report or 'final' report
+reportType <- "final" # specify whether this is the 'pilot' report or 'final' report
 pilotNames <- "Julie Cachia" # insert the pilot's name here e.g., "Tom Hardwicke".  If there are multiple pilots enter both names in a character string e.g., "Tom Hardwicke, Bob Dylan"
 copilotNames <- "Greses Anabell Perez-Joehnk" # # insert the co-pilot's name here e.g., "Michael Frank". If there are multiple co-pilots enter both names in a character string e.g., "Tom Hardwicke, Bob Dylan"
 pilotTTC <- "240" # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
-copilotTTC <- NA # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+copilotTTC <- "480" # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
 pilotStartDate <- as.Date("11/03/18", format = "%m/%d/%y") # insert the pilot's start date in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
-copilotStartDate <- NA # insert the co-pilot's start date in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
-completionDate <- NA # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
+copilotStartDate <- as.Date("11/04/18", format = "%m/%d/%y") # insert the co-pilot's start date in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
+completionDate <- as.Date("11/04/18", format = "%m/%d/%y") # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
 ```
 
 ------
@@ -294,11 +294,11 @@ if(reportType == "final"){
 The following code chunk does not run because the function carpsReport() is not found.
 ```{r}
 # carpsReport(Report_Type = 'pilot',
-#           Article_ID = 'EXT_10-07-2015', 
+#           Article_ID = 'EXT_10-07-2015',
 #           Insufficient_Information_Errors = 0,
 #           Decision_Errors = 0,
 #           Major_Numerical_Errors = 0,
-#           Time_to_Complete = 240, 
+#           Time_to_Complete = 240,
 #           Author_Assistance = FALSE)
 ```
 
