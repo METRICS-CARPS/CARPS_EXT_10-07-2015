@@ -1,0 +1,2 @@
+articleID,pilotNames,copilotNames,pilotTTC,copilotTTC,pilotStartDate,copilotStartDate,completionDate,Author_Assistance,finalOutcome,Insufficient_Information_Errors,locus_typo,locus_specification,locus_analysis,locus_data,locus_unidentified,locus_typo_resolved,locus_specification_resolved,locus_analysis_resolved,locus_data_resolved,locus_unidentified_resolved
+EXT_10-07-2015,Julie Cachia,Greses Anabell Perez-Joehnk,240,NA,2018-11-03,NA,NA,FALSE,Success without author assistance,0,3,0,0,0,0,NA,NA,NA,NA,NA
